@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --verde-menta-claro: rgb(188, 238, 144);    /* Verde menta claro, suave e fresco */
+    --verde-menta: rgb(45, 128, 93);            /* Verde menta, vibrante e refrescante */
+    --verde-grama: rgb(50, 205, 50);            /* Verde grama, alegre e natural */
+    --verde-oliva-claro: rgb(189, 183, 107);    /* Verde oliva claro, suave e terroso */
+    --verde-oliva: rgb(107, 142, 35);           /* Verde oliva, quente e terroso */
+    --verde-escuro: rgb(0, 128, 0);             /* Verde escuro, profundo e elegante */
+    --verde-escuro-2: rgb(0, 100, 0);           /* Verde escuro mais profundo, sólido e intenso */
+    --fundo: var(--verde-menta-claro);          /* Cor de fundo em verde menta claro */
+    --cor-texto: var(--verde-escuro);           /* Cor do texto em verde escuro */
+    --cor-principal: var(--verde-grama);        /* Cor de fundo da caixa principal em verde grama */
+    --cor-titulo: var(--verde-oliva);           /* Cor do título em verde oliva */
+    --cor-botao: var(--verde-menta);            /* Cor de fundo do botão em verde menta */
+    --cor-botao-hover: var(--verde-escuro-2);   /* Cor de fundo do botão ao passar o mouse em verde escuro 2 */
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Adicionado para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado para profundidade */
+}
+
+.titulo {
+    color: var(--cor-titulo);
+    font-family: 'Georgia', serif;
+    margin: 0 0 20px 0; /* Adicionado espaçamento abaixo do título */
+}
+
+button {
+    background-color: var(--cor-botao);
+    color: var(--fundo); /* Cor do texto do botão em contraste com o fundo do botão */
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+    margin: 10px;
+    cursor: pointer; /* Adicionado para melhorar a usabilidade */
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
